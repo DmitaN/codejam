@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>eldritch-codejam</title>
+</head>
+
+<body class="body">
+
+  <div class="message flex opacity--hidden">
+    <p class="message__text">
+      Поздравляю тебя, юный маг, Чародей, и любитель магии! Ты решил испытать свои силы в сражении с древним! Я помогу
+      тебе! Я дам тебе колоду карт мифов, созданную при помощи, старого заклинания и написанного на древних
+      монускриптах JS.
+    </p>
+    <p class="message__text message__text--bottom">
+      Удачи мой друг! Да прибудет с тобой сила!
+    </p>
+    <button class="message__button btn-reset">Продолжить</button>
+  </div>
+  <div class="ancients__container container opacity--hidden">
+    <div class="ancients__message">
+      <p class="ancients__text-message">1 клик для приближения древнего</p>
+      <p class="ancients__text-message">2 клика для выбора древнего</p>
+    </div>
+    <div class="ancients__content">
+      <ul class="ancients__list list-reset flex">
+        <li class="ancients__item ancients__item--start ancients__item--ancient-1"></li>
+        <li class="ancients__item ancients__item--start ancients__item--ancient-2"></li>
+        <li class="ancients__item ancients__item--start ancients__item--ancient-3"></li>
+        <li class="ancients__item ancients__item--start ancients__item--ancient-4"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="level__container container opacity--hidden">
+    <div class="level__message">
+      <p class="level__text-message">Выберите уровень сложности</p>
+    </div>
+    <div class="level__content">
+      <ul class="level__list list-reset flex">
+        <li class="level__item level__item--level-1">
+          <button class="level__button level__button--level-1 btn-reset">Очень легкий уровень</button>
+        </li>
+        <li class="level__item level__item--level-2">
+          <button class="level__button level__button--level-2 btn-reset">Легкий уровень</button>
+        </li>
+        <li class="level__item level__item--level-3">
+          <button class="level__button level__button--level-3 btn-reset">Средний уровень</button>
+        </li>
+        <li class="level__item level__item--level-4">
+          <button class="level__button level__button--level-4 btn-reset">Высокий уровень</button>
+        </li>
+        <li class="level__item level__item--level-5">
+          <button class="level__button level__button--level-5 btn-reset">Очень высокий уровень</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="start__container container flex opacity--hidden">
+    <button class="start__button btn-reset">Замешать колоду</button>
+  </div>
+  <div class="deck__container container flex opacity--hidden">
+    <div class="deck__tracker flex">
+      <p class="deck__descr">Первый этап игры</p>
+      <div class="deck__counter deck__counter--first flex">
+        <span class="deck__count deck__count--first deck__count--green">0</span>
+        <span class="deck__count deck__count--first deck__count--brown">0</span>
+        <span class="deck__count deck__count--first deck__count--blue">0</span>
+      </div>
+      <p class="deck__descr">Второй этап игры</p>
+      <div class="deck__counter deck__counter--second flex">
+        <span class="deck__count deck__count--second deck__count--green">0</span>
+        <span class="deck__count deck__count--second deck__count--brown">0</span>
+        <span class="deck__count deck__count--second deck__count--blue">0</span>
+      </div>
+      <p class="deck__descr">Третий этап игры</p>
+      <div class="deck__counter deck__counter--third flex">
+        <span class="deck__count deck__count--third deck__count--green">0</span>
+        <span class="deck__count deck__count--third deck__count--brown">0</span>
+        <span class="deck__count deck__count--third deck__count--blue">0</span>
+      </div>
+      <button class="audio__mute btn-reset">Mute</button>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="https://rs.school/js/" class="footer__link footer__link--image-1" target="_blank"></a>
+        </li>
+        <li class="footer__item">
+          <a href="https://github.com/DmitaN/" class="footer__link footer__link--image-2" target="_blank"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="deck__card deck__close-card"></div>
+    <div class="deck__card move"></div>
+    <div class="deck__card deck__open-card open-card">
+      <div class="deck__card open-card__content">
+        <div class="deck__card open-card__back"></div>
+        <div class="deck__card open-card__front"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__container container">
+
+  </div>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
